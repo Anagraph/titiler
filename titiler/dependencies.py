@@ -23,7 +23,7 @@ from starlette.requests import Request
 
 ################################################################################
 #                       CMAP AND TMS Customization
-tms = tms.register([custom_tms.EPSG3413, custom_tms.EPSG6933])
+tms = tms.register([custom_tms.EPSG3413, custom_tms.EPSG6933, custom_tms.MTM8])
 
 cmap = cmap.register({"above": custom_colormap.above_cmap})
 
